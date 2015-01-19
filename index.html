@@ -1,20 +1,332 @@
 <!DOCTYPE html>
 <html lang="ar">
 
-
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
+	<meta charset="UTF-8" />
+   <title>The French Olive</title>
+	
+    <link rel="shortcut icon" href="favicon.png">
+	<link rel="icon" href="favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+
+     <link rel="stylesheet" href="css/lightbox.css" @charset="utf-8";>
+    <link type="text/css" rel="stylesheet" media="all" href="css/custom.css" @charset="utf-8";>
+   <!-- <link type="text/css" rel="stylesheet" media="all" href="css/slideshow.css" @charset="utf-8";>-->
+     <link type="text/css" rel="stylesheet" media="all" href="css/menu-gallery.css" @charset="utf-8";>
+	<link type="text/css" rel="stylesheet" media="all" href="css/style.css" @charset="utf-8";>
+	<link type="text/css" rel="stylesheet" media="all" href="css/responsive.css" @charset="utf-8";>
+   
+	<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js" charset="utf-8"></script>
+     <script src="js/lightbox.js" charset="utf-8"></script>
+     <script type="text/javascript" src="js/navigation.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+     
+	
 
      <script type="text/javascript">
-   
+    $(function() {
+		$("li").click(function(e) {
+  		$("li").removeClass("active");
+  		$(this).addClass("active");
+		});
+	});
 	
-	function loader() {
-		window.location.href="http://jamp-me.com/mobile/frencholive/administration/frontend/index.html";
-	}
+	
 	</script>
+   
+ 
+
+
+    <style>
+    	@font-face {
+		  font-family: 'Raleway';
+		  font-style: normal;
+		  font-weight: 300;
+		  src: local('Raleway Light'), local('Raleway-Light'), url(fonts/RalewayLight.woff) format('woff');
+		}
+		@font-face {
+		  font-family: 'Raleway';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Raleway'), url(fonts/Raleway.woff) format('woff');
+		}
+		@font-face {
+		  font-family: 'Raleway';
+		  font-style: normal;
+		  font-weight: 500;
+		  src: local('Raleway Medium'), local('Raleway-Medium'), url(fonts/RalewayMedium.woff) format('woff');
+		}
+		
+		
+		@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 100;
+		  src: local('Roboto Thin'), local('Roboto-Thin'), url(fonts/2tsd397wLxj96qwHyNIkxHYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2'), url(fonts/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+		}
+		@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 300;
+		  src: local('Roboto Light'), local('Roboto-Light'), url(fonts/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(fonts/Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+		}
+		@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Roboto'), local('Roboto-Regular'), urlfonts/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'), url(fonts/CrYjSnGjrRCn0pd9VQsnFOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+		}
+		@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 500;
+		  src: local('Roboto Medium'), local('Roboto-Medium'), url(fonts/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(fonts/RxZJdnzeo3R5zSexge8UUbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+		}
+
+	</style>
+     <script type="text/javascript">
+    $(function() {
+        $('li').click(function(e) {
+            e.preventDefault();
+            $(this).parent().find('navlink').removeClass('navlink');
+           $(this).parent().addClass('active');
+		  		$(this).find('active').removeClass('active');
+			  $(this).addClass('active');
+        });
+		
+		/*$('.flip').click(function(e) {
+            window.open('index_process.php');
+        });
+		*/
+		
+    });
+  </script>
+<!-- <script type="text/javascript">
+    $(function() {
+        $('li').click(function(e) {
+            e.preventDefault();
+            $(this).parent().find('navlink').removeClass('navlink');
+           $(this).parent().addClass('active');
+		  		$(this).find('active').removeClass('active');
+			  $(this).addClass('active');
+        });
+		
+		
+    });
+  </script>-->
+ 
+ 
+ 
+<!-- <script type="text/javascript" charset="utf-8">
+        // Wait for Cordova to load
+  document.addEventListener("deviceready", onDeviceReady, false);
+  // Cordova is ready
+  function onDeviceReady() {
+      alert("Going to start download");
+      downloadFile();
+  }
+
+    function downloadFile(){
+        window.requestFileSystem(
+                                 LocalFileSystem.PERSISTENT, 0,
+                                 function onFileSystemSuccess(fileSystem) {
+                                 fileSystem.root.getFile(
+                                                         "dummy.html", {create: true, exclusive: false},
+                                                         function gotFileEntry(fileEntry){
+                                                         var sPath = fileEntry.fullPath.replace("dummy.html","");
+                                                         var fileTransfer = new FileTransfer();
+                                                         fileEntry.remove();
+                                                         fileTransfer.download(
+                                                                               "jamp-me.com/mobile/frencholive/administration/frontend/restaurant.html",
+                                                                               sPath + "restaurant.html",
+                                                                               function(theFile) {
+                                                                               console.log("download complete: " + theFile.toURI());
+                                                                               showLink(theFile.toURI());
+                                                                               },
+                                                                               function(error) {
+                                                                               console.log("download error source " + error.source);
+                                                                               console.log("download error target " + error.target);
+                                                                               console.log("upload error code: " + error.code);
+                                                                               }
+                                                                               );
+                                                         },
+                                                         fail);
+                                 },
+                                 fail);
+    }
+    function showLink(url){
+        alert(url);
+        var divEl = document.getElementById("deviceready");
+        var aElem = document.createElement("a");
+        aElem.setAttribute("target", "_blank");
+        aElem.setAttribute("href", url);
+        aElem.appendChild(document.createTextNode("Ready! Click To Open."))
+        divEl.appendChild(aElem);
+    }
+    function fail(evt) {
+        console.log(evt.target.error.code);
+    }
+
+    </script>
+-->    
 </head>
 
-<body onload="loader();">
+<body>
+<div id="ios7-statusbar-fix"></div>
+
+	<div id="w">
+			<div id="pagebody">
+        
+			<header id="toolbarnav">
+				<a href="#navmenu" id="menu-btn"></a>
+			
+				<!--<h1>HK Mobile</h1>-->
+			</header>
+			
+			<section id="content" class="clearfix">
+				
+				      <!-- <div class="home">
+         <center>-->
+                <img src="img/menu-bg.jpg" />
+                 <!-- <p class="version">Version 1.0</p>-->
+             <!--   </center>-->
+             <!-- <iframe src="restaurant.html" width="1024" height="768" frameborder="0" name="icon" seamless> </iframe>-->                <!--</div>-->
+                
+            
+			</section>
+              
+		</div>
+	
+	
+
+        
+        
+		<div id="navmenu" class="sideajax">
+
+				
+                <header >
+				
+                <h1 style="height:100px !important; margin-bottom:5px;"><img src="img/logo.png" style="max-height:100%; min-height:100%;"/></h1>
+				</header>
+				
+                <nav id="cd-lateral-nav" class="lateral-menu-is-open">
+                                 
+				<div id="nav">
+<ul class="cd-navigation"><li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/016.html">RAW/CRUDI</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/013.html">SOUP/ZUPPE</a> </li> <li id="00" class=item-has-children
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">SMALL PLATES TO SHARE/ANTIPASI</a><ul class="sub-menu" style="display:none;"><li id="14" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/004.html">COLD</a> </li> <li id="14" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/006.html">HOT</a> </li> </ul>  </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/007.html">SALAD/INSLATE</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/005.html">SANDWICHES/PANINI/TARTINE (served from 9am to 6pm)</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/017.html">PASTA</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/018.html">PIZZA</a> </li> <li id="00" class=item-has-children
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">MAIN COURSE</a><ul class="sub-menu" style="display:none;"><li id="19" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/020.html">FROM THE LAND</a> </li> <li id="19" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/021.html">FROM THE SEA</a> </li> </ul>  </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/022.html">STEAK FRITES</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/023.html">DESSERTS</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/024.html">SEASONAL FRUIT PLATE</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/025.html">COMPLETE BREAKFAST</a> </li> <li id="00" class=item-has-children
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">EGGS AND SPECIALTY BREAKFAST</a><ul class="sub-menu" style="display:none;"><li id="26" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/027.html">FROM THE PIZZA OVEN</a> </li> <li id="26" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/028.html">CLASSIC</a> </li> </ul>  </li> <li id="00" class=item-has-children
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">BEVERAGES</a><ul class="sub-menu" style="display:none;"><li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/031.html">FLAVOURED WATERS</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/032.html">HOT COFFEES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/033.html">COLD COFFEES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/034.html">ICED TEAS - (served on ice and slightly sweet)</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/035.html">FRESH HEALTHY JUICES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/036.html">MOCKTAILS</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/037.html">SMOOTHIES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/038.html">MILKSHAKES</a> </li> </ul>  </li> <li id="tea" class=item-has-children
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">TEAS</a><ul class="sub-menu" style="display:none;"><li id="46" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/041.html">GREEN TEAS</a> </li> <li id="46" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/043.html">HERBAL INFUSIONS</a> </li> <li id="46" class="cd-single-item-wrapper"
+					data-expanded-icon="carat" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#jamp-me.com/mobile/frencholive/administration/frontend/pages/044.html">HIGH TEA</a> </li> </ul>  </li> </ul>
+                    </div>                 
+                </nav>
+		</div><!-- /navmenu -->
+        
+            
+
+
+</div>
+
+
+    
+
+<script src="js/metismenu.min.js"></script>
+
+
+<script src="js/prism.min.js"></script>
+    
+  <!--  <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    -->
+   <script src="js/ios-orientationchange-fix.js"></script> 
+     <script>
+
+ jQuery(function($) {
+		$("#navmenu").overflowY = "scroll";
+	
+	});
+	
+	
+	$("#mainconten").load("restaurant.html", function(response, status, xhr) {
+    if (status == "error") {
+        var msg = "Sorry but there was an error: ";
+        alert(msg + xhr.status + " " + xhr.statusText);
+      }
+});
+
+
+	</script>
+    
+    
 </body>
+ 
+        
+   
 </html>
+
+ 	
+ 	
