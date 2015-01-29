@@ -18,21 +18,43 @@
      <link type="text/css" rel="stylesheet" media="all" href="css/menu-gallery.css" @charset="utf-8";>
 	<link type="text/css" rel="stylesheet" media="all" href="css/style.css" @charset="utf-8";>
 	<link type="text/css" rel="stylesheet" media="all" href="css/responsive.css" @charset="utf-8";>
-   
-	<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+  
+  <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+     <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
     <script src="js/jquery.mobile-1.4.5.min.js" charset="utf-8"></script>
+   
      <script src="js/lightbox.js" charset="utf-8"></script>
      <script type="text/javascript" src="js/navigation.js" charset="utf-8"></script>
-	<script type="text/javascript" src="js/script.js" charset="utf-8"></script>
-     <script type="text/javascript">
-    $(function() {
+         <script type="text/javascript">
+/*    $(function() {
 		$("li").click(function(e) {
   		$("li").removeClass("active");
   		$(this).addClass("active");
 		});
 	});
+*/	
+   
+    $(function() {
 	
+		$("li.cd-single-item-wrapper").click(function(e) {
+  		$("li.cd-single-item-wrapper").removeClass("active");
+		$("ul.sub-menu li").removeClass("activechild");
+		$("li.item-has-children").removeClass("active");
+				$("ul.sub-menu li").click(function(e) {
+					$("ul.sub-menu li").removeClass("activechild");
+					$(this).addClass("activechild");
+					//$("sub-menu").slideDown();
+				});
+  		$(this).addClass("active");
+		});
+		
+		$("li.item-has-children").click(function(e) {
+  		
+  		$(this).addClass("active");
+		});
+	});
 	
+  
 	</script>
    
  
@@ -129,7 +151,7 @@
 				<!--<h1>HK Mobile</h1>-->
 			</header>
 			
-			<section id="content" class="clearfix">
+			<section id="content" class="clearfix content-slide">
 				
 				      <!-- <div class="home">
          <center>-->
@@ -151,81 +173,69 @@
 
 				<div id="banner">
                 <header>
-				<h1><img src="img/logo.png" /></h1>
+				<h1><img id="applogo" src="img/logo.png" style="cursor:pointer;"/></h1>
 				</header>
 					</div>
                 <nav id="cd-lateral-nav" class="lateral-menu-is-open">
                                  
     <div id="nav">
-<ul class='cd-navigation'><li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/016.html>RAW/CRUDI</a> </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/013.html>SOUP/ZUPPE</a> </li> <li id=000 class=item-has-children
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=ui-button href=#0>SMALL PLATES TO SHARE/ANTIPASI</a><ul class='sub-menu' style='display:none;'><li id=014 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/004.html>COLD</a> </li> <li id=014 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/006.html>HOT</a> </li> </ul>  </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/007.html>SALAD/INSLATE</a> </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/005.html>SANDWICHES/PANINI/TARTINE (served from 9am to 6pm)</a> </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/017.html>PASTA</a> </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/018.html>PIZZA</a> </li> <li id=000 class=item-has-children
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=ui-button href=#0>MAIN COURSE</a><ul class='sub-menu' style='display:none;'><li id=019 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/020.html>FROM THE LAND</a> </li> <li id=019 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/021.html>FROM THE SEA</a> </li> </ul>  </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/022.html>STEAK FRITES</a> </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/023.html>DESSERTS</a> </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/024.html>SEASONAL FRUIT PLATE</a> </li> <li id=000 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/025.html>COMPLETE BREAKFAST</a> </li> <li id=000 class=item-has-children
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=ui-button href=#0>EGGS & SPECIALTY BREAKFAST</a><ul class='sub-menu' style='display:none;'><li id=026 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/027.html>FROM THE PIZZA OVEN</a> </li> <li id=026 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/028.html>CLASSIC</a> </li> </ul>  </li> <li id=000 class=item-has-children
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=ui-button href=#0>BEVERAGES</a><ul class='sub-menu' style='display:none;'><li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/031.html>FLAVOURED WATERS</a> </li> <li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/032.html>HOT COFFEES</a> </li> <li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/033.html>COLD COFFEES</a> </li> <li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/034.html>ICED TEAS - (served on ice and slightly sweet)</a> </li> <li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/035.html>FRESH HEALTHY JUICES</a> </li> <li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/036.html>MOCKTAILS</a> </li> <li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/037.html>SMOOTHIES</a> </li> <li id=045 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/038.html>MILKSHAKES</a> </li> </ul>  </li> <li id=000 class=item-has-children
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=ui-button href=#0>TEA</a><ul class='sub-menu' style='display:none;'><li id=046 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/040.html>BLACK TEAS</a> </li> <li id=046 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/041.html>GREEN TEAS</a> </li> <li id=046 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/042.html>WHITE TEA</a> </li> <li id=046 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/043.html>HERBAL INFUSIONS</a> </li> <li id=046 class=cd-single-item-wrapper
-					data-expanded-icon='carat-u' data-collapsed-icon='carat-d'>
-					<a class=navlink href=#pages/044.html>HIGH TEA</a> </li> </ul>  </li> </ul> </div>
+<ul class='cd-navigation'><li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/016.html">RAW/CRUDI</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/013.html">SOUP/ZUPPE</a> </li> <li id="00" class="item-has-children"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">ANTIPASTI</a><ul class="sub-menu" style="display:none;"><li id="14" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/004.html">COLD</a> </li> <li id="14" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/006.html">HOT</a> </li> </ul>  </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/007.html">SALAD/INSALATE</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/005.html">SANDWICHES/PANINI/TARTINE (served from 9am to 6pm)</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/017.html">PASTA</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/018.html">PIZZA</a> </li> <li id="00" class="item-has-children"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">MAIN COURSE</a><ul class="sub-menu" style="display:none;"><li id="19" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/020.html">FROM THE LAND</a> </li> <li id="19" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/021.html">FROM THE SEA</a> </li> </ul>  </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/022.html">STEAK FRITES</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/023.html">DESSERTS</a> </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/048.html">BREAKFAST</a> </li> <li id="00" class="item-has-children"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">EGGS & SPECIALTY BREAKFAST</a><ul class="sub-menu" style="display:none;"><li id="26" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/027.html">FROM THE PIZZA OVEN</a> </li> <li id="26" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/028.html">CLASSIC</a> </li> </ul>  </li> <li id="00" class="item-has-children"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="ui-button" href="#0">BEVERAGES</a><ul class="sub-menu" style="display:none;"><li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/031.html">FLAVOURED WATERS</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/032.html">HOT COFFEES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/033.html">COLD COFFEES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/034.html">ICED TEAS - (served on ice and slightly sweet)</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/035.html">FRESH HEALTHY JUICES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/036.html">MOCKTAILS</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/037.html">SMOOTHIES</a> </li> <li id="45" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/038.html">MILKSHAKES</a> </li> </ul>  </li> <li id="00" class="cd-single-item-wrapper"
+					data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
+					<a class="navlink" href="#pages/046.html">TEAS</a> </li> </ul> </div>
 		                 
                 </nav>
 		</div><!-- /navmenu -->
@@ -236,8 +246,7 @@
 
 </div>
 
-    
- <!--   <script src="http://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <!--   <script src="http://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 -->
 <script src="js/metismenu.min.js"></script>
 
@@ -253,11 +262,11 @@
 <script src="js/prism.min.js"></script>
     
        
-   <script src="js/ios-orientationchange-fix.js"></script> 
+     <script src="js/ios-orientationchange-fix.js"></script> 
      <script>
 
  jQuery(function($) {
-		$("#navmenu").overflowY = "scroll";
+		$("#navmenu").overflowY = "auto";
 	
 	});
 	
@@ -269,20 +278,24 @@
       }
 	});
 
-
-	/*$('#cd-lateral-nav').load('menu_list_view.html', function(response, status, xhr) {
+	
+		$("#applogo").click(function(e) {
+		
+		$("#content").load('wowslideshow.html', function(response, status, xhr) {
     if (status == "error") {
         var msg = "Sorry but there was an error: ";
         alert(msg + xhr.status + " " + xhr.statusText);
       }
-});*/
-
-
+	  $("#content").addClass("content-slide");
+	});
+		
+	});
+	
 	</script>
     
     
 </body>
- 
+  
         
    
 </html>

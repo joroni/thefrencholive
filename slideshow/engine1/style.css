@@ -9,7 +9,7 @@
 	position: relative;
 	width: 100%;
 	max-width: 760px;
-	max-height:784px;
+	max-height:765px;
 	margin:0px auto 0px;
 	z-index:90;
 	text-align:left; /* reset align=center */
@@ -21,6 +21,9 @@
 	-moz-box-sizing: content-box;
 	box-sizing: content-box; 
 }
+
+
+
 * html #wowslider-container1{ width:760px }
 #wowslider-container1 .ws_images ul{
 	position:relative;
@@ -46,7 +49,19 @@
 	margin:0 0 0 0 !important;
 }
 
-#wowslider-container1 .ws_images{
+#wowslider-container1 .ws_images {
+    border: 1px solid #ffffff;
+    height: 100%;
+    left: 0;
+    max-height: 585px;
+    max-width: 760px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+}
+
+/*#wowslider-container1 .ws_images{
 	position: relative;
 	left:0;
 	top:0;
@@ -56,7 +71,7 @@
 	vertical-align: top;
 	border:1px solid #FFFFFF;
 	overflow: hidden;
-}
+}*/
 #wowslider-container1 .ws_images ul a{
 	width:100%;
 	height:100%;
@@ -354,6 +369,17 @@
 	width:100%;
 	height: 11.9em;
 }
+
+
+#wowslider-container1 .ws_thumbs {
+    bottom: 0 !important;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 580px;
+    width: 100%;
+}
+
 #wowslider-container1  .ws_thumbs div{
 	position:relative;
 	letter-spacing:-4px;

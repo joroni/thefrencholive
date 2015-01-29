@@ -39,7 +39,7 @@ $(document).ready(function(){
 	$("#menu").live("click", function(e){
 		e.preventDefault();
 		var leftval = pagebody.css('left');
-		
+			
 		if(leftval == "0px") {
 			openme();
 		}
@@ -62,7 +62,9 @@ $(document).ready(function(){
 		
 		//closeme();
 		openme();
-		
+		$( "#content" ).removeClass( "content-slide");	
+					
+
 		$(function() {
 			topbar.css("top", "0px");
 			window.scrollTo(0, 1);

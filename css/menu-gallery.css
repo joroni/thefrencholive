@@ -3,22 +3,19 @@ list-style-type:none !important;
 }
 h1#prodName {
 color: #11171f !important;
-/*font-family: "Raleway",sans-serif;*/
-font-family:'Roboto', sans-serif;
-font-size: 2.2em !important;
+font-family:"Roboto", sans-serif;
+font-size: 1.7em !important;
 font-weight: 300;
 margin-bottom: 2px;
-/*text-align: right;*/
 text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;
-
-
-
 float:left;
 line-height:0.85em;
 }
+
+
 .lb-data {
 /*font-family:'Raleway', sans-serif;*/
-font-family:'Roboto', sans-serif;
+font-family:"Roboto", sans-serif;
 font-weight:400;
 color: #ccc;
 float: left;
@@ -61,13 +58,22 @@ width: 100%;
 }*/
 div#priceBox p.item_price {
 /*font-family:'Raleway', sans-serif;*/
-font-family: 'Roboto', sans-serif;
+font-family: "Roboto", sans-serif;
 font-weight:100;
 font-size:2em !important;
 /*text-shadow:1px 1px 4px #333;*/
 color:#333;
 font-weight:100;
 }
+div.prod-details.focal div div#priceBox p.item_price {
+    color: #333;
+    font-family: "Roboto",sans-serif;
+    font-size: 2em !important;
+    font-weight: 100;
+    margin-bottom: 5px !important;
+    margin-top: -8px;
+}
+
 /*div.item-prod {
 background-color: #fff;
 border-radius: 0 !important;
@@ -91,17 +97,22 @@ div.item-prod {
     transition: background-color 0.1s ease-out 0s;
     width: 240px;
 }
-/*
-.prodName {
-    color: #333;
+
+div.item-prodfocal {
+    background-color: #fff;
+    border-radius: 0 !important;
+    display: inline-block;
     float: left;
-    font-family: "Raleway",sans-serif;
-    font-size: 1.6em;
-    margin-top: 1.2em;
-	font-weight:100;
-    text-align: center;
-    width: 100%;
-}*/
+    line-height: 0;
+    margin: 1.5rem -1rem 1.2rem 2rem;
+    height: 630px !important;
+	width:280px;
+    padding: 1px;
+    transition: background-color 0.1s ease-out 0s;
+    max-width: 100%;
+}
+
+
 
 .prodName {
     color: #333;
@@ -124,6 +135,14 @@ width: 14rem !important;
 border-radius: 0 !important;
 width: 14rem !important;
 }
+
+.example-imagefocal {
+border-radius: 0 !important;
+max-width: 100%;
+min-width:100%;
+}
+
+
 .lb-outerContainer {
 background-color: white;
 border-radius: 0px !important;
@@ -373,10 +392,13 @@ ul.jqm-list.ui-alt-icon.ui-nodisc-icon.ui-listview li.ui-collapsible.ui-collapsi
 }
 
 
-div.item-prod.box a img {
+div.item-prod.box a img, div.item-prodfocal.box {
 	 box-shadow: 0 2px 4px #ddd;
 	  padding: 5px;
 }
+
+
+
 
 body.menu .ui-grid-a > .ui-block-a, body.menu .ui-grid-a > .ui-block-b {
     position: relative;
@@ -399,7 +421,17 @@ div.englang {
     border: 0px solid;
     float: left;
     max-width: 45%;
-    min-width: 315px;
+  	/*min-width: 315px;*/
+	min-width:242px;
+	margin-left:2%;
+}
+
+div.prod-details.focal div.englang {
+    border: 0px solid;
+    float: left;
+    max-width: 100%;
+  	/*min-width: 315px;*/
+	min-width:242px;
 	margin-left:2%;
 }
 
@@ -407,7 +439,18 @@ div.arlang {
     border: 0px solid;
     float: right;
     max-width: 45%;
-	min-width: 315px;
+	/*min-width: 315px;*/
+	min-width:242px;
+	margin-right:2%;
+
+}
+
+div.prod-details.focal div.arlang {
+    border: 0px solid;
+    float: right;
+    max-width: 100%;
+	/*min-width: 315px;*/
+	min-width:242px;
 	margin-right:2%;
 
 }
@@ -448,7 +491,7 @@ div.arlang div.description {
     float: right;
     line-height:1em;
 	 font-kerning: auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 100;
 	width:100%;
     text-align: right !important;
@@ -467,7 +510,7 @@ div.englang h1#prodName.name {
 div.englang div.description {
     float: left;
     font-kerning: auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 100;
     line-height: 1em;
     text-align: left !important;
@@ -488,7 +531,7 @@ div.arlang div.pName {
 	float:right;
 }
 
- span.lb-caption div.englang div#priceBox {
+ span.lb-caption div.englang div#priceBox, div.englang div#priceBox {
     border-left: 2px solid #333;
     float: left;
     line-height: 2.2em;
@@ -498,8 +541,10 @@ div.arlang div.pName {
 }
 
 
- span.lb-caption div.arlang div#priceBox {
-    border-right: 2px solid #333;
+ /*li.item-has-children.data-expanded-icon= a.ui-button.ui-link*/
+
+ span.lb-caption div.arlang div#priceBox, div.arlang div#priceBox {
+    border-right: 2px solid #333 !important;
     float: right;
     line-height: 2.2em;
     margin-right: 10px;
@@ -508,12 +553,16 @@ div.arlang div.pName {
 }
 
 
-li.item-has-children {
+/*li.item-has-children {
 	background:url("../img/a22.png") no-repeat scroll 210px 17px transparent;
-}
+}*/
 
 li.item-has-children.active {
     background: none repeat scroll 0 0 #9bbfc8;
+}
+
+ul.sub-menu li.activechild {
+    background: none repeat scroll 0 0 #75a3ae;
 }
 
 div#banner header h1 img {
@@ -523,12 +572,29 @@ div#banner header h1 img {
 }
 
 div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default h1 {
-	font-family:'Roboto', sans-serif !important;
+	font-family:"Roboto", sans-serif !important;
 	font-weight:100 !important;
 	font-size:.05em !important;
 }
 
-li#tea.item-has-children.active {
+/*li#tea.item-has-children.active {
 	background:url("../img/a23.png") no-repeat scroll 215px 17px #9bbfc8 !important;
 }
+*/
 
+div.prod-details {
+    float: left;
+    margin-left: 15px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 280px;
+}
+
+div.prod-details.focal {
+	border-bottom: 1px solid #eee;
+    float: left;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: 10px 10px 30px 10px;
+    width: 400px;
+}
