@@ -77,8 +77,8 @@ ul,ol,h1,h2,h3,h4,h5,h6,p { display: block; }
 /*#w #pagebody { position: relative; left: 0; max-width: 640px; min-width: 320px; z-index: 99999; }*/
 /*#w #pagebody { position: relative; left: 0; max-width: 760px !important; min-width: 760px; z-index: 99999; }
  #w #navmenu, #w nav#cd-lateral-nav { background: url("../img/img-2.jpg") repeat fixed 1204px 881px #f4f4de !important; min-height: 760px; max-height: 800px; display: block; position: fixed; overflow-y:scroll; width: 255px !important; left: 0px !important; top: 0px !important; z-index: 0;  }*/
-#w #navmenu, #w nav#cd-lateral-nav { background: url("../img/img-1.jpg") repeat fixed 1204px 881px #bed5db !important; min-height: 480px; max-height: 800px; display: block; width: 255px !important; left: 0px !important; top: 0px !important; z-index: 0;  }
-
+#w #navmenu, #w nav#cd-lateral-nav { background: url("../img/img-1.jpg") repeat fixed 1204px 881px #bed5db !important; min-height: 480px; max-height: 800px; display: block; width: 255px !important; left: 0px !important; top: 0px !important; z-index: 100000  }
+#nav {  min-height: 480px; max-height: 800px;  overflow-y:auto; }
 
 /** @group header **/
 /*#w #pagebody header#toolbarnav { display: block; position: fixed; left: 0px; top: 0px; z-index: 9999; background: #0b1851 url('../img/tabbar-solid-bg.png') top left no-repeat; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; border-bottom-right-radius: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-bottom-left-radius: 0; -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; height: 44px; width: 100%; max-width: 640px; }*/
@@ -259,8 +259,7 @@ div#navmenu.sideajax div#banner {
     position: relative !important;
     top: 200px !important;
     z-index: 1800 !important;
-}*/
-
+}
 nav#cd-lateral-nav {
     max-height: 600px !important;
     min-height: 300px !important;
@@ -268,7 +267,7 @@ nav#cd-lateral-nav {
     position: relative !important;
     top: 200px !important;
     z-index: 1800 !important;
-}
+}*/
 
 /*#w #navmenu.sideajax ul {
  background: none repeat scroll 0 0 #475566;

@@ -4,6 +4,9 @@
 		font-size: 1.0em;
 		line-height: 1.3em;
 	}
+	
+	#w #navmenu, #w nav#cd-lateral-nav { background: url("../img/img-1.jpg") repeat fixed 1204px 881px #bed5db !important; min-height: 240px; max-height: 400px; display: block; width: 255px !important; left: 0px !important; top: 0px !important; z-index: 100000 !important; overflow-y:auto; }
+	
 }
 
 /** retina display **/
