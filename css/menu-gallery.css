@@ -619,14 +619,14 @@ div.arlang div.pName {
 }
 
 
-/*li.item-has-children {
+li.item-has-children {
 	background:url("../img/a22.png") no-repeat scroll 210px 17px transparent;
-}*/
-
-li.item-has-children.active {
-    background: none repeat scroll 0 0 #9bbfc8;
 }
 
+/*li.item-has-children.active {
+    background: none repeat scroll 0 0 #9bbfc8;
+}
+*/
 ul.sub-menu li.activechild {
     background: none repeat scroll 0 0 #75a3ae;
 }
@@ -643,10 +643,10 @@ div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default h1 {
 	font-size:.05em !important;
 }
 
-/*li#tea.item-has-children.active {
+li.item-has-children.active {
 	background:url("../img/a23.png") no-repeat scroll 215px 17px #9bbfc8 !important;
 }
-*/
+
 
 div.prod-details {
     float: left;
