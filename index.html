@@ -23,43 +23,31 @@
     <script src="js/lightbox.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/navigation.js" charset="utf-8"></script>
     <script type="text/javascript">
-      /*    $(function() {
-      		$("li").click(function(e) {
-        		$("li").removeClass("active");
-        		$(this).addClass("active");
-      		});
-      	});
-      */	
-         
-          $(function() {
+    	 $(function() {
       	
       		$("li.cd-single-item-wrapper").click(function(e) {
       			$("li.cd-single-item-wrapper").removeClass("active");
-				$(".sub-menu").slideUp();
+				//$(".sub-menu").slideUp();
       			$("ul.sub-menu li").removeClass("activechild");
       			$("li.item-has-children").removeClass("active");
       		$("ul.sub-menu li").click(function(e) {
+						//$(".sub-menu").slideDown();
       					$("ul.sub-menu li").removeClass("activechild");
       					$(this).addClass("activechild");
-      					$(".sub-menu").slideUp();
+      					
       				});
         		$(this).addClass("active");
-      		$(".sub-menu").slideUp();
+      		//$(".sub-menu").slideUp();
       		});
       		
       		$("li.item-has-children").click(function(e) {
+				
         		$(this).addClass("active");
+				//$(".sub-menu").slideDown();
       		});
       	});
       
         
-				/*	$('li#last').click(function(evt) {
-				evt.preventDefault();
-				$("#cd-lateral-nav").animate({
-					top : '-=300'
-				});
-			});
-					*/
       	 </script>
     <!--           
       <script>
@@ -178,7 +166,7 @@
               </li>
               <li id="00" class="cd-single-item-wrapper"
                 data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
-                <a class="navlink" href="#pages/005.html">SANDWICHES/PANINI/TARTINE<br><span class="subtitle"> (served from 9am to 6pm)</span></a> 
+                <a class="navlink" href="#pages/005.html">SANDWICHES/PANINI/TARTINE<br><span class="nav-subtitle"> (served from 9am to 6pm)</span></a> 
               </li>
               <li id="00" class="cd-single-item-wrapper"
                 data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
@@ -255,7 +243,7 @@
                   </li>
                   <li id="45" class="cd-single-item-wrapper"
                     data-expanded-icon="carat-u" data-collapsed-icon="carat-d">
-                    <a class="navlink" href="#pages/034.html">ICED TEAS<br><p class="subtitle">(served on ice and slightly sweet)</p></a> 
+                    <a class="navlink" href="#pages/034.html">ICED TEAS<br><p class="nav-subtitle">(served on ice and slightly sweet)</p></a> 
                   </li>
                   <li id="45" class="cd-single-item-wrapper"
                     data-expanded-icon="carat-u" data-collapsed-icon="carat-d">

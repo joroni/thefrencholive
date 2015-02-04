@@ -689,3 +689,9 @@ ul.sub-menu li a {
 	font-size:90%;
 	text-transform:lowercase;
 }
+
+.nav-subtitle {
+	font-weight:100;
+	font-size:80%;
+	text-transform:lowercase;
+}
