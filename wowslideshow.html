@@ -1,18 +1,13 @@
-<!--<!DOCTYPE html>
-<html>
-<head>
-	<title>The French Olive</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />-->
+
 	
 	
 
 	<link rel="stylesheet" type="text/css" href="slideshow/engine1/style.css" />
-	<!--<script type="text/javascript" src="slideshow/engine1/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="css/plainmodal.css" />
+
+	<!--<script type="text/javascript" src="slideshow/engine1/jquery.js"></script>-->
 	
 
-</head>
-<body style="background-color:#D3D3D3;margin:auto">-->
-	
 	
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
@@ -41,10 +36,34 @@
 </div>
 <span class="wsl"></span>
 	<div class="ws_shadow"></div>
+    <div id="appver" > <span id="sample-01-button"  data-icon="gear"  data-inline="true" data-theme="a">&copy; Copyright 2015. The French Olive. All rights reserved. About the app.</span></div>
+      
+        
+        
+<div id="sample-01">
+  <div class="plainmodal-close"></div>
+ <div style="float:left"><h1><img id="applogo" src="img/logo.png" style="cursor:pointer;"/></h1></div>
+    <div style="float:left"><p>The French Olive</p>
+    <p>Version 1.0.0</p>
+    <p>thefrencholive.com.qa</p>
+  <p>Photography/App Development by:</p>
+    <p>joeagdeppa.com</p></div>
+</div>
+
+<script>
+$(function() {
+
+  $('#sample-01-button').click(function() {
+    $('#sample-01').plainModal('open');
+  });
+
+});
+</script>
+        
+        
+        
+        
 	</div>	
 	<script type="text/javascript" src="slideshow/engine1/wowslider.js"></script>
 	<script type="text/javascript" src="slideshow/engine1/script.js"></script>
 	
-<!--
-</body>
-</html>-->

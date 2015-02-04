@@ -80,3 +80,18 @@ if (navigator.userAgent.match(/(iPad.*|iPhone.*|iPod.*);.*CPU.*OS 7_\d/i)) {
     document.body.style.marginTop = '20px';
     document.getElementById('ios7-statusbar-fix').style.display = 'block';
 }
+
+
+
+
+
+
+/* var webview = Titanium.UI.createWebView({url:'http://joeagdeppa.com'});
+var thewindow = Titanium.UI.createWindow({
+    fullscreen:true,
+    modal:true,
+    tabBarHidden:true,
+    navBarHidden:true
+});
+thewindow.add(webview);
+thewindow.open();*/
