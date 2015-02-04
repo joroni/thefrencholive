@@ -34,37 +34,33 @@
           $(function() {
       	
       		$("li.cd-single-item-wrapper").click(function(e) {
-      		
-        		$("li.cd-single-item-wrapper").removeClass("active");
-      		$("ul.sub-menu li").removeClass("activechild");
-      		$("li.item-has-children").removeClass("active");
-      				$("ul.sub-menu li").click(function(e) {
+      			$("li.cd-single-item-wrapper").removeClass("active");
+				$(".sub-menu").slideUp();
+      			$("ul.sub-menu li").removeClass("activechild");
+      			$("li.item-has-children").removeClass("active");
+      		$("ul.sub-menu li").click(function(e) {
       					$("ul.sub-menu li").removeClass("activechild");
       					$(this).addClass("activechild");
-      					$("sub-menu").slideUp();
+      					$(".sub-menu").slideUp();
       				});
         		$(this).addClass("active");
-      		$("sub-menu").slideUp();
+      		$(".sub-menu").slideUp();
       		});
       		
       		$("li.item-has-children").click(function(e) {
-        		
         		$(this).addClass("active");
       		});
       	});
       
         
-	/*	$('li#last').click(function(evt) {
-    evt.preventDefault();
-    $("#cd-lateral-nav").animate({
-        top : '-=300'
-    });
-});
-		*/
-      				
-        		
-      	
-    </script>
+				/*	$('li#last').click(function(evt) {
+				evt.preventDefault();
+				$("#cd-lateral-nav").animate({
+					top : '-=300'
+				});
+			});
+					*/
+      	 </script>
     <!--           
       <script>
       function BlockMove(event) {
@@ -346,19 +342,20 @@
       
       
       	$("#applogo").click(function(e) {
-      	$("li.cd-single-item-wrapper").removeClass("active");
-      	$("ul.sub-menu li").removeClass("activechild");
-      	$("li.item-has-children").removeClass("active");
+			$("li.cd-single-item-wrapper").removeClass("active");
+			$("ul.sub-menu li").removeClass("activechild");
+			$("li.item-has-children").removeClass("active");
+			$(".sub-menu").slideUp();
       	
-      	$("#content").load('wowslideshow.html', function(response, status, xhr) {
-         if (status == "error") {
-             var msg = "Sorry but there was an error: ";
-             alert(msg + xhr.status + " " + xhr.statusText);
-           }
-        $("#content").addClass("content-slide");
-      });
+			$("#content").load('wowslideshow.html', function(response, status, xhr) {
+			 if (status == "error") {
+				 var msg = "Sorry but there was an error: ";
+				 alert(msg + xhr.status + " " + xhr.statusText);
+			   }
+			$("#content").addClass("content-slide");
+      		});
       	
-      });
+     	 });
       
     </script>
   </body>
