@@ -681,7 +681,7 @@ div.clearfixgap {
 }
 
 ul.sub-menu li a {
-	padding-left:20px !important;
+    text-indent: 0.5em !important;
 }
 
 .subtitle {

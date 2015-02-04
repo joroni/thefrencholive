@@ -81,7 +81,7 @@
     text-align: left;
     text-decoration: none;
     text-shadow: -1px -1px 1px #f0f0f0;
-	text-transform:uppercase;
+	text-transform:none;
 }
 
 #sample-01 p a {
@@ -114,11 +114,9 @@
 
 @media only screen and (min-width: 768px) {
   #sample-01 {
-    width: 450px;
-    /*margin-right: 0;*/
-    /*height: 400px;*/
     padding: 20px 40px;
-  }
+    width: auto !important;
+	}
   #sample-01:after { /* clearfix */
     content: "";
     clear: both;
@@ -187,4 +185,8 @@
 
 div#sample-01 div h1 img#applogo {
 	max-width:75px;
+}
+
+div.plainmodal-overlay {
+	opacity: 0 !important;
 }
