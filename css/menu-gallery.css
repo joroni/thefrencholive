@@ -14,6 +14,10 @@ line-height:0.85em;
 text-transform:uppercase;
 }
 */
+strong {
+    font-weight:500;
+    font-family:"Tahoma", sans-serif;
+}
 
 h1#grpNameEng {
     border: 0px solid;
@@ -688,6 +692,7 @@ ul.sub-menu li a {
 	font-weight:100;
 	font-size:90%;
 	text-transform:lowercase;
+    font-style:normal;
 }
 
 .nav-subtitle {
