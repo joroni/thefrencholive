@@ -51,10 +51,25 @@
       	 </script>-->
    <script type="text/javascript">
     $(function() {
-		$("li").click(function(e) {
-  		$("li").removeClass("active");
+		$("li.cd-single-item-wrapper").click(function(e) {
+  		$("li.cd-single-item-wrapper").removeClass("active");
+		$("li.item-has-children").removeClass("active");
+		$("ul.sub-menu li").removeClass("activechild");
   		$(this).addClass("active");
 		});
+		
+		$("li.item-has-children").click(function(e) {
+  		$("li.item-has-children").removeClass("active");
+		$("li.cd-single-item-wrapper").removeClass("active");
+  		$(this).addClass("active");
+		});
+		
+		
+		$("ul.sub-menu li").click(function(e) {
+  		$("ul.sub-menu li").removeClass("activechild");
+  		$(this).addClass("activechild");
+		});
+		
 	});
 	</script>
     <style>
