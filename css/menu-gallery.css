@@ -627,3 +627,15 @@ ul.sub-menu li a {
 	font-size:80%;
 	text-transform:lowercase;
 }
+
+ul#desc {
+	margin-left:10px;
+}
+
+ul#desc li {
+	line-height:1em;
+}
+
+div.arlang div.description ul#desc {
+	margin-right:10px;
+}
