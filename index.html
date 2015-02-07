@@ -22,7 +22,7 @@
     <script src="js/jquery.plainmodal.js" charset="utf-8"></script>
     <script src="js/lightbox.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/navigation.js" charset="utf-8"></script>
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
     	 $(function() {
       	
       		$("li.cd-single-item-wrapper").click(function(e) {
@@ -48,19 +48,15 @@
       	});
       
         
-      	 </script>
-    <!--           
-      <script>
-      function BlockMove(event) {
-        // Tell Safari not to move the window.
-        event.preventDefault() ;
-       }
-       
-       
-       
-      
-      
-      </script>-->
+      	 </script>-->
+   <script type="text/javascript">
+    $(function() {
+		$("li").click(function(e) {
+  		$("li").removeClass("active");
+  		$(this).addClass("active");
+		});
+	});
+	</script>
     <style>
       @font-face {
       font-family: 'Raleway';
